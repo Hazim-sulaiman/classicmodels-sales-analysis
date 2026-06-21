@@ -1,0 +1,4 @@
+-- ==========================================
+-- CLASSICMODELS SALES ANALYSIS PROJECT
+-- SECTION 1: DATA EXPLORATION
+-- ==========================================
