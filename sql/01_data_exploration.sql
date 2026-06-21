@@ -2,3 +2,10 @@
 -- CLASSICMODELS SALES ANALYSIS PROJECT
 -- SECTION 1: DATA EXPLORATION
 -- ==========================================
+-- ==========================================
+-- DATABASE OVERVIEW
+-- ==========================================
+-- Total Customers
+-- Total Orders
+-- Total Products
+-- Total Payments
