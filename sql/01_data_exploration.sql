@@ -5,7 +5,7 @@
 -- ==========================================
 -- DATABASE OVERVIEW
 -- ==========================================
--- Show all tables in the database
+-- SHOW ALL TABLES IN THE DATABASE
 SHOW TABLES;
 
 -- ==========================================
@@ -14,25 +14,25 @@ SHOW TABLES;
 -- CUSTOMER TABLE STRUCTURE
 DESCRIBE customers;
 
--- Total Customers
+-- TOTAL CUSTOMERS
 SELECT
     COUNT(*) AS total_customers
 FROM
     customers;
 
--- Total Orders
+-- TOTAL ORDERS
 SELECT
     COUNT(*) AS total_orders
 FROM
     orders;
 
--- Total Products
+-- TOTAL PRODUCTS
 SELECT
     COUNT(*) AS total_products
 FROM
     products;
 
--- Total Payments
+-- TOTAL PAYMENTS
 SELECT
     COUNT(*) AS total_payments
 FROM
@@ -53,8 +53,9 @@ ORDER BY
     total_customers DESC;
 
 -- ==========================================
--- CREDIT LIMIT EXPLRATION
+-- CREDIT LIMIT EXPLORATION
 -- ==========================================
+-- TOP CUSTOMERS BY CREDIT LIMIT
 SELECT
     customerName,
     country,
@@ -74,8 +75,24 @@ FROM
 
 -- CUSTOMERS WITH NO CREDIT LIMIT
 SELECT
-    count(*) AS customer_with_no_credit
+    COUNT(*) AS customers_with_no_credit
 FROM
     customers
 WHERE
     creditLimit = 0;
+
+-- CUSTOMERS BY CREDIT LIMIT RANGE
+SELECT
+    CASE
+        WHEN creditLimit >= 100000 THEN 'High Credit'
+        WHEN creditLimit >= 50000 THEN 'Medium Credit'
+        WHEN creditLimit > 0 THEN 'Low Credit'
+        ELSE 'No Credit'
+    END AS credit_limit_range,
+    COUNT(*) AS total_customers
+FROM
+    customers
+GROUP BY
+    credit_limit_range
+ORDER BY
+    total_customers DESC;
