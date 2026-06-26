@@ -27,3 +27,21 @@
 - 24 customers have no assigned credit limit, accounting for nearly 20% of the customer base.
 - Only 13 customers fall into the Low Credit category.
 - The majority of customers fall into the Medium and High Credit categories, indicating that a substantial portion of the customer base has moderate to high credit capacity.
+
+## Order Status Analysis
+
+- The vast majority of orders (303 out of 326) have been successfully shipped, representing approximately 93% of all orders.
+- Only 6 orders were cancelled, indicating a relatively low cancellation rate.
+- A small number of orders remain In Process, On Hold, or Disputed, which may require operational follow-up.
+- Overall, the order fulfillment process appears to be highly efficient based on the current order status distribution.
+
+## Order Trend Analysis
+
+- Orders increased from 111 in 2003 to 151 in 2004, indicating strong business growth during this period.
+- The dataset contains only 64 orders for 2005; however, this should not be interpreted as a decline in business performance because the data covers only part of the year.
+
+## Monthly Order Distribution
+
+- November recorded the highest number of orders (63), followed by October (31).
+- April and May each recorded 29 orders.
+- Monthly order counts vary across the dataset; however, these results should be interpreted with caution because the dataset does not contain complete data for all years.
