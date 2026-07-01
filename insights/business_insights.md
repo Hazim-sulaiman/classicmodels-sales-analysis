@@ -45,3 +45,9 @@
 - November recorded the highest number of orders (63), followed by October (31).
 - April and May each recorded 29 orders.
 - Monthly order counts vary across the dataset; however, these results should be interpreted with caution because the dataset does not contain complete data for all years.
+
+## Customer Order Behavior
+
+- Customers place an average of 3.33 orders each.
+- This indicates that many customers make repeat purchases rather than placing only a single order.
+- Understanding the average order frequency helps evaluate customer retention and purchasing behavior.
